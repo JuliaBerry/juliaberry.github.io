@@ -7,7 +7,7 @@ JuliaBerry is an organisation that brings together various resources for using t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EvJ-OvTC5eE" frameborder="0" allowfullscreen></iframe>
 
-# Installation
+# Installing Julia
 
 Julia has started to provide support for the ARM architecture used by the Raspberry Pi since version 0.5.
 
