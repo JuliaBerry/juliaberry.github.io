@@ -45,3 +45,5 @@ The JuliaBerry org provides several Raspberry Pi-specific packages:
 We do not have a dedicated mailing list, however questions can be posted to [julia-users list](https://groups.google.com/group/julia-users).
 
 Issues should be filed with the relevant packages: if in doubt which package is appropriate, please ask on the above mailing list.
+
+If you would like to contribute a new package to the JuliaBerry org, open an issue on the repository and ping [@aviks](https://github.com/aviks) or [@simonbyrne](https://github.com/simonbyrne).
