@@ -15,7 +15,7 @@ Julia has started to provide support for the ARM architecture used by the Raspbe
 
 For the Raspberry Pi 2 and 3, the easiest way to install Julia is to download the "ARMv7 32-bit hard float" binary from the [JuliaLang downloads](http://julialang.org/downloads/) page.
 
-The current release (0.5.0) bundles a version of the the libstdc++ which is quite old, and can cause conflicts when using certain julia packages ([issue #18816](https://github.com/JuliaLang/julia/issues/18816)). This can be fixed by removing the file `lib/julia/libstdc++.so.6` from the extracted tree (a newer version is already provided by Raspbian).
+The current release (0.5.0) bundles a version of the libstdc++ library which is quite old, and can cause conflicts when using certain julia packages ([issue #18816](https://github.com/JuliaLang/julia/issues/18816)). This can be fixed by removing the file `lib/julia/libstdc++.so.6` from the extracted tree (it is not needed as a newer version is already installed on Raspbian).
 
 This can all be accomplished by the following:
 
