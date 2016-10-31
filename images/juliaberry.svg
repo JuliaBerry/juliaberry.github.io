@@ -10,8 +10,8 @@
    viewBox="0 0 570 720"
    id="svg4210"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="JuliaBerry.svg">
+   inkscape:version="0.91+devel+osxmenu r12922"
+   sodipodi:docname="juliaberry.svg">
   <metadata
      id="metadata4244">
     <rdf:RDF>
@@ -20,7 +20,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,11 +39,11 @@
      inkscape:window-height="651"
      id="namedview4240"
      showgrid="false"
-     inkscape:zoom="0.33680556"
+     inkscape:zoom="1.18"
      inkscape:cx="324.57682"
      inkscape:cy="275.83862"
      inkscape:window-x="276"
-     inkscape:window-y="6"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4210" />
   <path
@@ -66,7 +66,7 @@
      style="fill:#60ad51;fill-opacity:1;stroke:#389826;stroke-width:10;stroke-miterlimit:4.0999999;stroke-dasharray:none;stroke-opacity:1"
      inkscape:connector-curvature="0" />
   <path
-     d="M 241.45823,303.96669 A 72.998843,86.129678 34.034226 1 1 146.49039,447.67896 72.998843,86.129678 34.034226 0 1 241.45823,303.96669 Z"
+     d="M 241.45823,299.96669 A 72.998843,86.129678 34.034226 1 1 146.49039,443.67896 72.998843,86.129678 34.034226 0 1 241.45823,299.96669 Z"
      id="path4220"
      style="fill:#aa79c1;fill-opacity:1;stroke:#9558b2;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      inkscape:connector-curvature="0" />
