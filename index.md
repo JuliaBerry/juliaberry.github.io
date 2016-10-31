@@ -39,6 +39,7 @@ The JuliaBerry org provides several Raspberry Pi-specific packages:
 
 * [PiGPIO.jl](https://github.com/JuliaBerry/PiGPIO.jl): managing external hardware using GPIO pins.
 * [PiCraft.jl](https://github.com/JuliaBerry/PiCraft.jl): manipulating Minecraft on the Raspberry Pi from Julia
+* [SenseHat.jl](https://github.com/JuliaBerry/SenseHat.jl): interacting with the [Sense HAT](https://www.raspberrypi.org/products/sense-hat/).
 
 # Questions/issues
 
@@ -47,3 +48,5 @@ We do not have a dedicated mailing list, however questions can be posted to [jul
 Issues should be filed with the relevant packages: if in doubt which package is appropriate, please ask on the above mailing list.
 
 If you would like to contribute a new package to the JuliaBerry org, open an issue on the repository and ping [@aviks](https://github.com/aviks) or [@simonbyrne](https://github.com/simonbyrne).
+
+If you have any comments or suggestions for the website, please open an issue [here](https://github.com/JuliaBerry/juliaberry.github.io/issues).
