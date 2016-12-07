@@ -43,7 +43,7 @@ The JuliaBerry org provides several Raspberry Pi-specific packages:
 
 # Questions/issues
 
-We do not have a dedicated mailing list, however questions can be posted to [julia-users list](https://groups.google.com/group/julia-users).
+We do not have a dedicated mailing list, however questions can be posted to the [Julia discourse](https://discourse.julialang.org).
 
 Issues should be filed with the relevant packages: if in doubt which package is appropriate, please ask on the above mailing list.
 
