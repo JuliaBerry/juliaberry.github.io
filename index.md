@@ -9,29 +9,15 @@ JuliaBerry is an organisation that brings together various resources for using t
 
 # Installing Julia
 
-Julia has started to provide support for the ARM architecture used by the Raspberry Pi since version 0.5.
+Julia is now available as part of Raspbian: the easiest way to install it is via
+```
+sudo apt-get update
+sudo apt-get install julia
+```
 
-## Prebuilt binary
+Alternatively, you can download the "ARMv7 32-bit hard float" binary (Pi 2 and 3only) from the [JuliaLang downloads](http://julialang.org/downloads/). Note there are currently some known issues with these ([#17549](https://github.com/JuliaLang/julia/issues/17549), [#18816](https://github.com/JuliaLang/julia/issues/18816) and [#20936](https://github.com/JuliaLang/julia/issues/20936)), so installing via `apt` is recommended.
 
-For the Raspberry Pi 2 and 3, the easiest way to install Julia is to download the "ARMv7 32-bit hard float" binary from the [JuliaLang downloads](http://julialang.org/downloads/) page.
-
-The current release (0.5.0) bundles a version of the libstdc++ library which is quite old, and can cause conflicts when using certain julia packages ([issue #18816](https://github.com/JuliaLang/julia/issues/18816)). This can be fixed by removing the file `lib/julia/libstdc++.so.6` from the extracted tree (it is not needed as a newer version is already installed on Raspbian).
-
-This can all be accomplished by the following:
-
-    wget https://julialang.s3.amazonaws.com/bin/linux/arm/0.5/julia-0.5-latest-linux-arm.tar.gz
-    mkdir julia
-    tar -xzf julia-0.5-latest-linux-arm.tar.gz -C julia --strip-components 1 --exclude libstdc++.so.6
-
-Julia can then be run by
-
-    julia/bin/julia
-
-You may get a warning "WARNING: unable to determine host cpu name.": this can safely be ignored and should be fixed in the next release ([issue #17549](https://github.com/JuliaLang/julia/issues/17549)).
-
-## Compiling from source
-
-If you have a Raspberry Pi 1 or Zero, you will need to compile it from source. Instructions for this are available in the [Julia ARM readme](https://github.com/JuliaLang/julia/blob/master/README.arm.md).
+If you want to compile it from source, see the [Julia ARM readme](https://github.com/JuliaLang/julia/blob/master/README.arm.md).
 
 # IJulia notebook
 
