@@ -62,7 +62,7 @@ The hardest part is waiting.  The initial compile will take 12+ hours to compile
 
 # Distributing
 ### Binary Distributions
-Additional details can be found (here)[https://github.com/JuliaLang/julia/blob/master/DISTRIBUTING.md].
+Additional details can be found [here](https://github.com/JuliaLang/julia/blob/master/DISTRIBUTING.md).
 
 ```
 make binary-dist

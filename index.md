@@ -17,7 +17,11 @@ sudo apt install julia
 
 Alternatively, you can download the "ARMv7 32-bit hard float" binary (Pi 2 and 3 only) from the [JuliaLang downloads](http://julialang.org/downloads/). Note there are currently some known issues with these ([#17549](https://github.com/JuliaLang/julia/issues/17549), [#18816](https://github.com/JuliaLang/julia/issues/18816) and [#20936](https://github.com/JuliaLang/julia/issues/20936)), so installing via `apt` is recommended.
 
-If you want to compile it from source, see the [Julia ARM readme](https://github.com/JuliaLang/julia/blob/master/README.arm.md).
+~~If you want to compile it from source, see the [Julia ARM readme](https://github.com/JuliaLang/julia/blob/master/README.arm.md).~~
+
+# Compiling Julia
+
+Instructions can be found [over here](compile.html)
 
 # IJulia notebook
 
