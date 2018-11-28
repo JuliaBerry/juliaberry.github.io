@@ -21,7 +21,7 @@ Alternatively, you can download the "ARMv7 32-bit hard float" binary (Pi 2 and 3
 
 # Compiling Julia
 
-Instructions can be found [over here](compile.html)
+Instructions can be found [over here](compile.md)
 
 # IJulia notebook
 
