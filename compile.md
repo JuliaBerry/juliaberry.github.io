@@ -60,7 +60,7 @@ make
 Due to the memory limits, running multiple jobs (i.e. `make -j...`) is not recommended.
 
 ## The hard part
-The hardest part is waiting.  The initial compile will take 12+ hours to compile.  Subsequent compiles after creating the _Make.user_ file as described above should only take around two hours.
+The hardest part is waiting.  On a Raspberry Pi 3 Model B+, the initial build takes 12+ hours.  Subsequent builds after creating the _Make.user_ file as described above should only take around two hours.
 
 # Distributing
 ### Binary Distributions
