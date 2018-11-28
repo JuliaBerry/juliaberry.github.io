@@ -13,7 +13,11 @@ The easiest way to install Julia is by downloading the 32-bit (ARMv7-a hard floa
 
 An older version of Julia (0.6) is also available via `apt` in Raspbian, we hope to update this to the latest version in the near future.
 
-If you want to compile it from source, see the [Julia ARM readme](https://github.com/JuliaLang/julia/blob/master/README.arm.md).
+~~If you want to compile it from source, see the [Julia ARM readme](https://github.com/JuliaLang/julia/blob/master/README.arm.md).~~
+
+# Compiling Julia
+
+Instructions can be found [over here](compile.md)
 
 # IJulia notebook
 
