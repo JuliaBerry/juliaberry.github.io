@@ -3,7 +3,7 @@ layout: default
 title:  JuliaBerry&#58; Compiling Julia
 ---
 
-Compiling Julia on the Raspberry Pi is quite the journey.  
+Compiling Julia on the Raspberry Pi is quite the journey.
 
 # Prerequisites
 ### Packages
@@ -15,8 +15,8 @@ sudo apt-get install build-essential libatomic1 python gfortran perl wget m4 cma
 ```
 
 ### Swap File
-The standard, out of the box swap file configuration is not sufficient.  The swap file is configured for only 100Mbs, which
-the compile will go through very fast.
+The standard, out of the box swap file configuration is not sufficient.  The swap file is configured for only 100MB, which
+the compiler will go through very fast.
 
 You can increase the size of the swap file by editing */etc/dphys-swapfile* as sudo/root.  Below are the recommended values:
 
@@ -56,6 +56,8 @@ This is perhaps the easiest step.  You will just need to execute *make* from the
 ```
 make
 ```
+
+Due to the memory limits, running multiple jobs (i.e. `make -j...`) is not recommended.
 
 ## The hard part
 The hardest part is waiting.  The initial compile will take 12+ hours to compile.  Subsequent compiles after creating the _Make.user_ file as described above should only take around two hours.
