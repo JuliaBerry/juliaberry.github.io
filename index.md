@@ -7,17 +7,24 @@ JuliaBerry is an organisation that brings together various resources for using t
 
 <div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/EvJ-OvTC5eE" frameborder="0" allowfullscreen></iframe></div>
 
-# Installing Julia
+# Installing Julia (Recommended)
 
 The easiest way to install Julia is by downloading the 32-bit (ARMv7-a hard float) prebuilt binary from [the JuliaLang website](https://julialang.org/downloads/).
 
-An older version of Julia (0.6) is also available via `apt` in Raspbian, we hope to update this to the latest version in the near future.
+An older version of Julia (1.0.3) is also available via `apt` in Raspbian, we hope to update this to the latest version in the near future. (This is the easiest way to install Julia and it adds Julia to PATH automatically.)
+
+    sudo apt install julia
+
+Please read below if you would like to compile Julia instead of installing Julia using the methods above.
 
 # Compiling Julia
 
-Instructions can be found [over here](compile.md)
+If you have installed Julia following the instructions above, there is no need to compile Julia. This method takes a very long time and takes up a lot of storage.
 
-# IJulia notebook
+For those who are interested in compiling Julia, instructions can be found [over here](compile.md)
+
+# IJulia notebook 
+This is **optional**, and is only for those who need [Jupyter Notebook](https://jupyter.org/).
 
 Jupyter will need to be installed manually, as the automatic Conda installer does not work on the ARM architecture. Generally, running
 
@@ -37,6 +44,10 @@ The JuliaBerry org provides several Raspberry Pi-specific packages:
 * [PiGPIO.jl](https://github.com/JuliaBerry/PiGPIO.jl): managing external hardware using GPIO pins.
 * [PiCraft.jl](https://github.com/JuliaBerry/PiCraft.jl): manipulating Minecraft on the Raspberry Pi from Julia
 * [SenseHat.jl](https://github.com/JuliaBerry/SenseHat.jl): interacting with the [Sense HAT](https://www.raspberrypi.org/products/sense-hat/).
+
+# Getting Started
+
+To get started with Julia, please follow the link [here](https://julialang.org/learning/) to start learning!
 
 # Questions/issues
 
