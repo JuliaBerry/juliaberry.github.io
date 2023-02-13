@@ -51,9 +51,9 @@ To get started with Julia, please follow the link [here](https://julialang.org/l
 
 # Questions/issues
 
-We do not have a dedicated mailing list, however questions can be posted to the [Julia discourse](https://discourse.julialang.org).
+We do not have a dedicated mailing list, however questions can be posted to the [Julia Discourse](https://discourse.julialang.org).
 
-Issues should be filed with the relevant packages: if in doubt which package is appropriate, please ask on the above mailing list.
+Issues should be filed with the relevant packages on Github: if in doubt which package is appropriate, please ask on Discourse.
 
 If you would like to contribute a new package to the JuliaBerry org, open an issue on the repository in question and ping [@aviks](https://github.com/aviks) or [@simonbyrne](https://github.com/simonbyrne).
 
