@@ -8,9 +8,9 @@ JuliaBerry is an organisation that brings together various resources for using t
 <div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/EvJ-OvTC5eE" frameborder="0" allowfullscreen></iframe></div>
 
 # Installation
-There are several ways to install julia on a Raspberry Pi listed below.
+This section describes three different methods of installing Julia.
 
-## The recommended way - Download the prebuilt binary
+### The recommended way - Download the prebuilt binary
 To install the newest available version of Julia, download the 32-bit (ARMv7-a hard float) prebuilt binary from the [JuliaLang website](https://julialang.org/downloads/). Below is a sequence of commands automates the process by downloading julia 1.6.7 for the Raspberry Pi, unpacking the downloaded `tar.gz` file, deleting the compressed file, making a folder `$HOME/.julia/my_installs`, and moving your Julia installation there. Of course, one should change the commands as one sees fit:
 
     curl https://julialang-s3.julialang.org/bin/linux/armv7l/1.6/julia-1.6.7-linux-armv7l.tar.gz --output $HOME/julia-1.6.7-linux-armv7l.tar.gz
@@ -24,12 +24,12 @@ Finally, you probably want to add `$HOME./julia/my_installs/bin` to path. To do 
     #=== My own edits ===#
     PATH="$HOME/.julia/my_installs/julia-1.6.7/bin:$PATH"
 
-## The easy way - Via `apt`
+### The easy way - Via `apt`
 Julia 1.5.3 is available via `apt` in Raspberry Pi OS. This adds `julia` to PATH automatically:
 
     sudo apt install julia
 
-## The hard way - Compiling Julia from source
+### The hard way - Compiling Julia from source
 This is the most difficult method, and is not needed if one of the methods above worked for you. Building Julia from source on a Raspberry Pi takes a very long time, and takes up a lot of storage. But for those who are interested in compiling Julia, instructions can be found [over here](compile.md).
 
 ## Installing IJulia notebook 
@@ -46,20 +46,18 @@ at the shell should work. Then it should be sufficient to do
 
 at the Julia REPL.
 
-# Packages
 
+# Packages
 The JuliaBerry org provides several Raspberry Pi-specific packages:
 
 * [PiGPIO.jl](https://github.com/JuliaBerry/PiGPIO.jl): managing external hardware using GPIO pins.
 * [PiCraft.jl](https://github.com/JuliaBerry/PiCraft.jl): manipulating Minecraft on the Raspberry Pi from Julia
 * [SenseHat.jl](https://github.com/JuliaBerry/SenseHat.jl): interacting with the [Sense HAT](https://www.raspberrypi.org/products/sense-hat/).
 
-# Getting Started
-
-To get started with Julia, please follow the link [here](https://julialang.org/learning/) to start learning!
+# Getting Started with Julia
+If you are new to Julia, welcome! We recommend heading over to [julialand.org/learning](https://julialang.org/learning/) to get started.
 
 # Questions/issues
-
 We do not have a dedicated mailing list, however questions can be posted to the [Julia Discourse](https://discourse.julialang.org).
 
 Issues should be filed with the relevant packages on Github: if in doubt which package is appropriate, please ask on Discourse.
