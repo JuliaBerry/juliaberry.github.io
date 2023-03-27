@@ -7,23 +7,32 @@ JuliaBerry is an organisation that brings together various resources for using t
 
 <div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/EvJ-OvTC5eE" frameborder="0" allowfullscreen></iframe></div>
 
-# Installing Julia (Recommended)
+# Installation
+There are several ways to install julia on a Raspberry Pi listed below.
 
-The easiest way to install Julia is by downloading the 32-bit (ARMv7-a hard float) prebuilt binary from [the JuliaLang website](https://julialang.org/downloads/).
+## The recommended way - Download the prebuilt binary
+To install the newest available version of Julia, download the 32-bit (ARMv7-a hard float) prebuilt binary from the [JuliaLang website](https://julialang.org/downloads/). Below is a sequence of commands automates the process by downloading julia 1.6.7 for the Raspberry Pi, unpacking the downloaded `tar.gz` file, deleting the compressed file, making a folder `$HOME/.julia/my_installs`, and moving your Julia installation there. Of course, one should change the commands as one sees fit:
 
-An older version of Julia (1.0.3) is also available via `apt` in Raspbian, we hope to update this to the latest version in the near future. (This is the easiest way to install Julia and it adds Julia to PATH automatically.)
+    curl https://julialang-s3.julialang.org/bin/linux/armv7l/1.6/julia-1.6.7-linux-armv7l.tar.gz --output $HOME/julia-1.6.7-linux-armv7l.tar.gz
+    tar -xzf $HOME/julia-1.6.7-linux-armv7l.tar.gz
+    rm $HOME/julia-1.6.7-linux-armv7l.tar.gz
+    mkdir -p $HOME/.julia/my_installs
+    mv $HOME/julia-1.6.7 $HOME/.julia/my_installs
+
+Finally, you probably want to add `$HOME./julia/my_installs/bin` to path. To do this, open `$HOME/.profile` in your text editor of choice, and add the following lines at the bottom of the file:
+
+    #=== My own edits ===#
+    PATH="$HOME/.julia/my_installs/julia-1.6.7/bin:$PATH"
+
+## The easy way - Via `apt`
+Julia 1.5.3 is available via `apt` in Raspberry Pi OS. This adds `julia` to PATH automatically:
 
     sudo apt install julia
 
-Please read below if you would like to compile Julia instead of installing Julia using the methods above.
+## The hard way - Compiling Julia from source
+This is the most difficult method, and is not needed if one of the methods above worked for you. Building Julia from source on a Raspberry Pi takes a very long time, and takes up a lot of storage. But for those who are interested in compiling Julia, instructions can be found [over here](compile.md).
 
-# Compiling Julia
-
-If you have installed Julia following the instructions above, there is no need to compile Julia. This method takes a very long time and takes up a lot of storage.
-
-For those who are interested in compiling Julia, instructions can be found [over here](compile.md)
-
-# IJulia notebook 
+## Installing IJulia notebook 
 This is **optional**, and is only for those who need [Jupyter Notebook](https://jupyter.org/).
 
 Jupyter will need to be installed manually, as the automatic Conda installer does not work on the ARM architecture. Generally, running
