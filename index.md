@@ -8,7 +8,7 @@ JuliaBerry is an organisation that brings together various resources for using t
 <div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/EvJ-OvTC5eE" frameborder="0" allowfullscreen></iframe></div>
 
 # Installation
-This section describes three different methods of installing Julia.
+Below, we go through three different methods of installing Julia on your Raspberry Pi.
 
 ### The recommended way - Download the prebuilt binary
 To install the newest available version of Julia, download the 32-bit (ARMv7-a hard float) prebuilt binary from the [JuliaLang website](https://julialang.org/downloads/). Below is a sequence of commands automates the process by downloading julia 1.6.7 for the Raspberry Pi, unpacking the downloaded `tar.gz` file, deleting the compressed file, making a folder `$HOME/.julia/my_installs`, and moving your Julia installation there. Of course, one should change the commands as one sees fit:
