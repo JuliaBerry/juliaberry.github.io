@@ -34,7 +34,7 @@ echo '#=== My own edits ===#' >> $HOME/.profile
 echo 'PATH="$HOME/.julia/my_installs/julia-1.6.7/bin:$PATH"' >> $HOME/.profile
 ```
 
-To load the version of `$HOME/.profile` with Julia on the path, you can run
+To load the version of `$HOME/.profile` with Julia on the path without restarting the shell, you can run
 ```
 source $HOME/.profile
 ```
