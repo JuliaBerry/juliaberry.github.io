@@ -27,13 +27,17 @@ mv $HOME/julia-1.6.7 $HOME/.julia/my_installs
 ```
 
 If you want to install a different version, or to a different directory, adjust the commands as you see fit.  
-Most users also want to add julia to path. This is typically a manual step, and can be done in many ways. If you pasted exactly the lines above, you can add Julia to path by running the following commands:
+Most users also want to add Julia to path. This is typically a manual step, and can be done in many ways. If you pasted exactly the lines above, you can add Julia to path by running the following commands:
 ```
 echo '' >> $HOME/.profile
 echo '#=== My own edits ===#' >> $HOME/.profile
 echo 'PATH="$HOME/.julia/my_installs/julia-1.6.7/bin:$PATH"' >> $HOME/.profile
 ```
 
+To load the version of `$HOME/.profile` with Julia on the path, you can run
+```
+source $HOME/.profile
+```
 ### The easy way - Via `apt`
 Julia 1.5.3 is available via `apt` in Raspberry Pi OS. This adds `julia` to PATH automatically:
 
