@@ -11,18 +11,28 @@ JuliaBerry is an organisation that brings together various resources for using t
 Below, we go through three different methods of installing Julia on your Raspberry Pi.
 
 ### The recommended way - Download the prebuilt binary
-To install the newest available version of Julia, download the 32-bit (ARMv7-a hard float) prebuilt binary from the [JuliaLang website](https://julialang.org/downloads/). Below is a sequence of commands automates the process by downloading julia 1.6.7 for the Raspberry Pi, unpacking the downloaded `tar.gz` file, deleting the compressed file, making a folder `$HOME/.julia/my_installs`, and moving your Julia installation there. Of course, one should change the commands as one sees fit:
+To install the newest available version of Julia, download the 32-bit (ARMv7-a hard float) prebuilt binary from the [JuliaLang website](https://julialang.org/downloads/). Below is a sequence of commands that can be copy pasted into the command-line on the Raspberry Pi to:
+1. Downloading julia 1.6.7 for the Raspberry Pi
+2. Unpacking the downloaded `tar.gz` file
+3. Deleting the compressed file
+4. Making a folder `$HOME/.julia/my_installs`
+5. Moving your Julia installation to `$HOME/.julia/my_installs`
 
-    curl https://julialang-s3.julialang.org/bin/linux/armv7l/1.6/julia-1.6.7-linux-armv7l.tar.gz --output $HOME/julia-1.6.7-linux-armv7l.tar.gz
-    tar -xzf $HOME/julia-1.6.7-linux-armv7l.tar.gz
-    rm $HOME/julia-1.6.7-linux-armv7l.tar.gz
-    mkdir -p $HOME/.julia/my_installs
-    mv $HOME/julia-1.6.7 $HOME/.julia/my_installs
+```
+curl https://julialang-s3.julialang.org/bin/linux/armv7l/1.6/julia-1.6.7-linux-armv7l.tar.gz --output $HOME/julia-1.6.7-linux-armv7l.tar.gz
+tar -xzf $HOME/julia-1.6.7-linux-armv7l.tar.gz
+rm $HOME/julia-1.6.7-linux-armv7l.tar.gz
+mkdir -p $HOME/.julia/my_installs
+mv $HOME/julia-1.6.7 $HOME/.julia/my_installs
+```
 
-Finally, you probably want to add `$HOME./julia/my_installs/bin` to path. To do this, open `$HOME/.profile` in your text editor of choice, and add the following lines at the bottom of the file:
-
-    #=== My own edits ===#
-    PATH="$HOME/.julia/my_installs/julia-1.6.7/bin:$PATH"
+If you want to install a different version, or to a different directory, adjust the commands as you see fit.  
+Most users also want to add julia to path. This is typically a manual step, and can be done in many ways. If you pasted exactly the lines above, you can add Julia to path by running the following commands:
+```
+echo '' >> $HOME/.profile
+echo '#=== My own edits ===#' >> $HOME/.profile
+echo 'PATH="$HOME/.julia/my_installs/julia-1.6.7/bin:$PATH"' >> $HOME/.profile
+```
 
 ### The easy way - Via `apt`
 Julia 1.5.3 is available via `apt` in Raspberry Pi OS. This adds `julia` to PATH automatically:
