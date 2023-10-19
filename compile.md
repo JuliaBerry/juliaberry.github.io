@@ -64,7 +64,7 @@ The hardest part is waiting.  On a Raspberry Pi 3 Model B+, the initial build ta
 
 # Distributing
 ### Binary Distributions
-Additional details can be found [here](https://github.com/JuliaLang/julia/blob/master/DISTRIBUTING.md).
+Additional details can be found [here](https://github.com/JuliaLang/julia/blob/master/doc/src/devdocs/build/distributing.md).
 
 ```
 make binary-dist
